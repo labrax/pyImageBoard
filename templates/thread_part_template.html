@@ -1,0 +1,99 @@
+$def with (posts, form, parsecontent, time)
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+		<meta content="noarchive" name="robots"></meta>
+		<meta http-equiv="Last-Modified" content="$:time" date="$:time" etag="out"/>
+		<link href="../static/favicon.ico" rel="shortcut icon"></link>
+	    <link href="../static/yotsubanew.css" rel="stylesheet" type="text/css">
+	    <style type="text/css">body.hasDropDownNav {margin-top: 50px;}.extButton.threadHideButton {float: left;margin-right: 5px;margin-top: -1px;}.extButton.replyHideButton {margin-top: 1px;}div.op > span .postHideButtonCollapsed {margin-right: 1px;}.dropDownNav #boardNavMobile, {display: block !important;}.extPanel {border: 1px solid rgba(0, 0, 0, 0.20);}.tomorrow .extPanel {border: 1px solid #111;}.extButton,img.pointer {width: 18px;height: 18px;}.extControls {display: inline;margin-left: 5px;}.extButton {cursor: pointer;margin-bottom: -4px;}.trashIcon {width: 16px;height: 16px;margin-bottom: -2px;margin-left: 5px;}.threadUpdateStatus {margin-left: 0.5ex;}.futaba_new .stub,.burichan_new .stub {line-height: 1;padding-bottom: 1px;}.stub .extControls,.stub .wbtn,.stub input {display: none;}.stub .threadHideButton {float: none;margin-right: 2px;}div.post div.postInfo {width: auto;display: inline;}.right {float: right;}.center {display: block;margin: auto;}.pointer {cursor: pointer;}.drag {cursor: move !important;user-select: none !important;-moz-user-select: none !important;-webkit-user-select: none !important;}#quickReport,#quickReply {display: block;position: fixed;padding: 2px;font-size: 10pt;}#qrepHeader,#qrHeader {text-align: center;margin-bottom: 1px;padding: 0;height: 18px;line-height: 18px;}#qrepClose,#qrClose {float: right;}#quickReport iframe {overflow: hidden;}#quickReport {height: 190px;}#qrForm > div {clear: both;}#quickReply input[type="text"],#quickReply textarea,#quickReply #recaptcha_response_field {border: 1px solid #aaa;font-family: arial,helvetica,sans-serif;font-size: 10pt;outline: medium none;width: 296px;padding: 2px;margin: 0 0 1px 0;}#quickReply textarea {min-width: 296px;float: left;}#quickReply input::-moz-placeholder,#quickReply textarea::-moz-placeholder {color: #aaa !important;opacity: 1 !important;}#quickReply input[type="submit"] {width: 83px;margin: 0;font-size: 10pt;float: left;}#quickReply #qrCapField {display: block;margin-top: 1px;}#qrCaptcha {width: 300px;height: 53px;cursor: pointer;border: 1px solid #aaa;display: block;}#quickReply input.presubmit {margin-right: 1px;width: 212px;float: left;}#qrFile {width: 215px;margin-right: 5px;}.qrRealFile {position: absolute;left: 0;visibility: hidden;}.yotsuba_new #qrFile {color:black;}#qrSpoiler {display: inline;}#qrError {width: 292px;display: none;font-family: monospace;background-color: #E62020;font-size: 12px;color: white;padding: 3px 5px;text-shadow: 0 1px rgba(0, 0, 0, 0.20);clear: both;}#qrError a:hover,#qrError a {color: white !important;}#twHeader {font-weight: bold;text-align: center;height: 17px;}.futaba_new #twHeader,.burichan_new #twHeader {line-height: 1;}#twPrune {margin-left: 3px;margin-top: -1px;}#threadWatcher {max-width: 265px;display: block;position: absolute;padding: 3px;}#watchList {margin: 0;padding: 0;user-select: none;-moz-user-select: none;-webkit-user-select: none;}#watchList li:first-child {margin-top: 3px;padding-top: 2px;border-top: 1px solid rgba(0, 0, 0, 0.20);}.photon #watchList li:first-child {border-top: 1px solid #ccc;}.yotsuba_new #watchList li:first-child {border-top: 1px solid #d9bfb7;}.yotsuba_b_new #watchList li:first-child {border-top: 1px solid #b7c5d9;}.tomorrow #watchList li:first-child {border-top: 1px solid #111;}#watchList a {text-decoration: none;}#watchList li {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}div.post div.image-expanded {display: table;}div.op div.file .image-expanded-anti {margin-left: -3px;}#quote-preview {display: block;position: absolute;padding: 3px 6px 6px 3px;margin: 0;}#quote-preview .dateTime {white-space: nowrap;}.yotsuba_new #quote-preview.highlight,.yotsuba_b_new #quote-preview.highlight {border-width: 1px 2px 2px 1px !important;border-style: solid !important;}.yotsuba_new #quote-preview.highlight {border-color: #D99F91 !important;}.yotsuba_b_new #quote-preview.highlight {border-color: #BA9DBF !important;}.yotsuba_b_new .highlight-anti,.burichan_new .highlight-anti {border-width: 1px !important;background-color: #bfa6ba !important;}.yotsuba_new .highlight-anti,.futaba_new .highlight-anti {background-color: #e8a690 !important;}.tomorrow .highlight-anti {background-color: #111 !important;border-color: #111;}.photon .highlight-anti {background-color: #bbb !important;}.op.inlined {display: block;}#quote-preview .inlined,#quote-preview .extButton,#quote-preview .extControls {display: none;}.hasNewReplies {font-weight: bold;}.deadlink {text-decoration: line-through !important;}div.backlink {font-size: 0.8em !important;display: inline;padding: 0;padding-left: 5px;}.backlink span {padding: 0;}.burichan_new .backlink a,.yotsuba_b_new .backlink a {color: #34345C !important;}.expbtn {margin-right: 3px;margin-left: 2px;}.tCollapsed .rExpanded {display: none;}#stickyNav {position: fixed;font-size: 0;}#stickyNav img {vertical-align: middle;}.tu-error {color: red;}.topPageNav {position: absolute;}.yotsuba_b_new .topPageNav {border-top: 1px solid rgba(255, 255, 255, 0.25);border-left: 1px solid rgba(255, 255, 255, 0.25);}.newPostsMarker:not(#quote-preview) {box-shadow: 0 3px red;}#toggleMsgBtn {float: left;margin-bottom: 6px;}.panelHeader {font-weight: bold;font-size: 16px;text-align: center;margin-bottom: 5px;margin-top: 5px;padding-bottom: 5px;border-bottom: 1px solid rgba(0, 0, 0, 0.20);}.yotsuba_new .panelHeader {border-bottom: 1px solid #d9bfb7;}.yotsuba_b_new .panelHeader {border-bottom: 1px solid #b7c5d9;}.tomorrow .panelHeader {border-bottom: 1px solid #111;}.panelHeader span {position: absolute;right: 5px;top: 5px;}.UIMenu,.UIPanel {position: fixed;width: 100%;height: 100%;z-index: 9002;top: 0;left: 0;}.UIPanel {line-height: 14px;font-size: 14px;background-color: rgba(0, 0, 0, 0.25);}.UIPanel:after {display: inline-block;height: 100%;vertical-align: middle;content: "";}.UIPanel > div {-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: auto;max-height: 100%;position: relative;width: 400px;left: 50%;margin-left: -200px;overflow: auto;box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);vertical-align: middle;}.extPanel input[type="text"],.extPanel textarea {border: 1px solid #AAA;outline: none;}.UIPanel .center {margin-bottom: 5px;}.UIPanel button {display: inline-block;margin-right: 5px;}.UIPanel code {background-color: #eee;color: #000000;padding: 1px 4px;font-size: 12px;}.UIPanel ul {list-style: none;padding: 0;margin: 0 0 10px;}.UIPanel .export-field {width: 385px;}#settingsMenu label input {margin-right: 5px;}.tomorrow #settingsMenu ul {border-bottom: 1px solid #282a2e;}.settings-cat {font-weight: bold;margin: 10px 0 5px;padding-left: 5px;}#customCSSMenu textarea {display: block;max-width: 100%;min-width: 100%;-moz-box-sizing: border-box;box-sizing: border-box;height: 200px;margin: 0 0 5px;font-family: monospace;}#customCSSMenu .right,#settingsMenu .right {margin-top: 2px;}#settingsMenu label {display: inline-block;user-select: none;-moz-user-select: none;-webkit-user-select: none;}#filtersHelp > div {width: 600px;left: 50%;margin-left: -300px;}#filtersHelp h4 {font-size: 15px;margin: 20px 0 0 10px;}#filtersHelp h4:before {content: "»";margin-right: 3px;}#filtersHelp ul {padding: 0;margin: 10px;}#filtersHelp li {padding: 3px 0;list-style: none;}#filtersMenu table {width: 100%;}#filtersMenu th {font-size: 12px;}#filtersMenu tbody {text-align: center;}#filtersMenu select,#filtersMenu .fPattern,#palette-custom-input {padding: 1px;font-size: 11px;}#filtersMenu select {width: 85px;}#filtersMenu tfoot td {padding-top: 10px;}#keybindsHelp li {padding: 3px 5px;}.fPattern {width: 130px;}.fColor {width: 60px;}.fDel {font-size: 16px;}.filter-preview {cursor: default;margin-left: 3px;}#quote-preview iframe,#quote-preview .filter-preview {display: none;}.post-hidden .extButton,.post-hidden:not(#quote-preview) .postInfo {opacity: 0.5;}.post-hidden:not(.thread) .postInfo {padding-left: 5px;}.post-hidden:not(#quote-preview) input,.post-hidden:not(#quote-preview) .replyContainer,.post-hidden:not(#quote-preview) .summary,.post-hidden:not(#quote-preview) .op .file,.post-hidden:not(#quote-preview) .file,.post-hidden .wbtn,.post-hidden .postNum span,.post-hidden:not(#quote-preview) .backlink,div.post-hidden:not(#quote-preview) div.file,div.post-hidden:not(#quote-preview) blockquote.postMessage {display: none;}.click-me {border-radius: 5px;margin-top: 5px;padding: 2px 5px;position: absolute;font-weight: bold;z-index: 2;white-space: nowrap;}.yotsuba_new .click-me,.futaba_new .click-me {color: #800000;background-color: #F0E0D6;border: 2px solid #D9BFB7;}.yotsuba_b_new .click-me,.burichan_new .click-me {color: #000;background-color: #D6DAF0;border: 2px solid #B7C5D9;}.tomorrow .click-me {color: #C5C8C6;background-color: #282A2E;border: 2px solid #111;}.photon .click-me {color: #333;background-color: #ddd;border: 2px solid #ccc;}.click-me:before {content: "";border-width: 0 6px 6px;border-style: solid;left: 50%;margin-left: -6px;position: absolute;width: 0;height: 0;top: -6px;}.yotsuba_new .click-me:before,.futaba_new .click-me:before {border-color: #D9BFB7 transparent;}.yotsuba_b_new .click-me:before,.burichan_new .click-me:before {border-color: #B7C5D9 transparent;}.tomorrow .click-me:before {border-color: #111 transparent;}.photon .click-me:before {border-color: #ccc transparent;}.click-me:after {content: "";border-width: 0 4px 4px;top: -4px;display: block;left: 50%;margin-left: -4px;position: absolute;width: 0;height: 0;}.yotsuba_new .click-me:after,.futaba_new .click-me:after {border-color: #F0E0D6 transparent;border-style: solid;}.yotsuba_b_new .click-me:after,.burichan_new .click-me:after {border-color: #D6DAF0 transparent;border-style: solid;}.tomorrow .click-me:after {border-color: #282A2E transparent;border-style: solid;}.photon .click-me:after {border-color: #DDD transparent;border-style: solid;}#image-hover {position: fixed;max-width: 100%;max-height: 100%;top: 0px;right: 0px;z-index: 3;}.thread-stats {float: right;}.compact .thread {max-width: 75%;}.dotted {text-decoration: none;border-bottom: 1px dashed;}.linkfade {opacity: 0.5;}#quote-preview .linkfade {opacity: 1.0;}kbd {background-color: #f7f7f7;color: black;border: 1px solid #ccc;border-radius: 3px 3px 3px 3px;box-shadow: 0 1px 0 #ccc, 0 0 0 2px #fff inset;font-family: monospace;font-size: 11px;line-height: 1.4;padding: 0 5px;}.deleted {opacity: 0.66;}.noPictures a.fileThumb img:not(.expanded-thumb) {opacity: 0;}.noPictures.futaba_new a.fileThumb,.noPictures.yotsuba_new a.fileThumb {border: 1px solid #800;}.noPictures.burichan_new a.fileThumb,.noPictures.yotsuba_b_new a.fileThumb {border: 1px solid #34345C;}.noPictures.tomorrow a.fileThumb:not(.expanded-thumb) {border: 1px solid #C5C8C6;}.noPictures.photon a.fileThumb:not(.expanded-thumb) {border: 1px solid #004A99;}.spinner {margin-top: 2px;padding: 3px;display: table;}#settings-presets {position: relative;top: -1px;}#colorpicker { position: fixed;text-align: center;}.colorbox {font-size: 10px;width: 16px;height: 16px;line-height: 17px;display: inline-block;text-align: center;background-color: #fff;border: 1px solid #aaa;text-decoration: none;color: #000;cursor: pointer;vertical-align: top;}#palette-custom-input {vertical-align: top;width: 45px;margin-right: 2px;}#qrDummyFile {float: left;margin-right: 5px;width: 220px;cursor: default;-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}#qrDummyFileLabel {margin-left: 3px;}.depageNumber {position: absolute;right: 5px;}.depagerEnabled .depagelink {font-weight: bold;}.depagerEnabled strong {font-weight: normal;}.depagelink {display: inline-block;padding: 4px 0;cursor: pointer;text-decoration: none;}.burichan_new .depagelink,.futaba_new .depagelink {text-decoration: underline;}#customMenuBox {margin: 0 auto 5px auto;width: 385px;display: block;}.preview-summary {display: block;}#swf-embed-header {padding: 0 0 0 3px;font-weight: normal;height: 20px;line-height: 20px;}.yotsuba_new #swf-embed-header,.yotsuba_b_new #swf-embed-header {height: 18px;line-height: 18px;}#swf-embed-close {position: absolute;right: 0;top: 1px;}@media only screen and (max-width: 480px) {.image-expanded .mFileInfo {display: none !important;}.mobile-report {float: right;font-size: 11px;margin-bottom: 3px;margin-left: 10px;}.mobile-report:after {content: "]";}.mobile-report:before {content: "[";}.nws .mobile-report:after {color: #800000;}.nws .mobile-report:before {color: #800000;}.ws .mobile-report {color: #34345C;}.nws .mobile-report {color:#0000EE;}.reply .mobile-report {margin-left: 5px;margin-right: 5px;}.postLink .mobileHideButton {margin-right: 3px;}.board .mobile-hr-hidden {margin-top: 10px !important;}.board > .mobileHideButton {margin-top: -20px !important;}.board > .mobileHideButton:first-child {margin-top: 10px !important;}.extButton.threadHideButton {float: none;margin: 0;margin-bottom: 5px;}.mobile-post-hidden {display: none;}#toggleMsgBtn {display: none;}.mobile-tu-status {height: 20px;line-height: 20px;}.mobile-tu-show {width: 150px;margin: auto;display: block;text-align: center;}.button input {margin: 0 3px 0 0;position: relative;top: -2px;border-radius: 0;height: 10px;width: 10px;}.UIPanel > div {width: 320px;margin-left: -160px;}.UIPanel .export-field {width: 300px;}.yotsuba_new #quote-preview.highlight,#quote-preview {border-width: 1px !important;}.yotsuba_new #quote-preview.highlight {border-color: #D9BFB7 !important;}#quickReply input[type="text"],#quickReply textarea,.extPanel input[type="text"],.extPanel textarea {font-size: 16px;}#quickReply {position: absolute;left: 50%;margin-left: -154px;}}</style>
+	    <title>pyImageBoard - $:posts[0][1]</title>
+	</head>
+
+	<body class="board_b yotsuba_new nws">
+		<div class="boardBanner">
+			<img class="title" alt="pyImageBoard" src="../static/banner.jpg"></img>
+			<div class="boardTitle">pyImageBoard</div>
+			<div class="boardSubtitle">The stories and information posted here are artistic works of fiction and falsehood.<br>Only a fool would take anything posted here as fact.</div>
+		</div>
+		<hr class="abovePostForm"></hr>
+		<div class="postingMode desktop">Posting mode: Reply</div>
+
+<div class="board">
+<div id="t$:posts[0][1]" class="thread">
+	<div id="pc$:posts[0][1]" class="postContainer opContainer">
+			<div id="p$:posts[0][1]" class="post op">
+				<div id="f$:posts[0][1]" class="file">
+					<div class="fileInfo">
+						<span id="fT$:posts[0][1]" class="fileText">File: <a target="_blank" href="../images/$:posts[0][5]">$:posts[0][5]</a>-($:posts[0][10], $:posts[0][11], <span title="$:posts[0][6]"> $:posts[0][6] </span>)</span>
+					</div>
+					<a class="fileThumb" target="_blank" href="../images/$:posts[0][5]">
+						<img style="height: $:posts[0][8] px; width: $:posts[0][9] px;" src="../images/thumb_$:posts[0][5]"></img>
+					</a>
+				</div>
+				<div id="pi$:posts[0][1]" class="postInfo desktop">
+					<span class="subject"></span>
+					<span class="nameBlock">
+						<span class="name">$:posts[0][2]</span>
+					</span>
+					<span class="dateTime" data-utc="no">$:posts[0][13]</span>
+					<span class="postNum">
+						<a title="Highlight this post" href="">No.</a>
+						<a title="Quote this post" href="">$:posts[0][1]</a>
+					</span>
+				</div>
+				<blockquote id="m$:posts[0][1]" class="postMessage">$:parsecontent(posts[0][12])</blockquote>
+			</div>
+	</div>
+	
+$def operation_posts(elem):
+	<div id="pc$:elem[1]" class="postContainer replyContainer">\
+	<div id="sa$:elem[1]" class="sideArrows">>></div>\
+	<div id="p$:elem[1]" class="post reply">\
+	<div id="pi$:elem[1]" class="postInfo desktop">\
+	<input type="checkbox" value="delete" name="$:elem[1]"></input>\
+	<span class="subject"></span>\
+	<span class="nameBlock">\
+	$if elem[3] != "":
+		<a class="name" href="mailto:$:elem[3]">$:elem[2]</a>\
+	$else:
+		<span class="name">$:elem[2]</span>\
+	</span>\
+	<span class="dateTime" data-utc="no">$:elem[13]</span>\
+	<span class="postNum desktop">\
+	<a title="Highlight this post" href="">No.</a>\
+	<a title="Quote this post" href="">$:elem[1]</a>\
+	</span>\
+	</div>\
+	$if elem[5] != "":
+		<div id="f$:elem[1]" class="file">\
+		<div class="fileInfo">\
+		<span id="fT$:elem[1]" class="fileText">File: <a target="_blank" href="../images/$:elem[5]">$:elem[5]</a>-($:elem[10], $:elem[11], <span title="$:elem[5]">$:elem[6]</span>)</span>\
+		</div>\
+		<a class="fileThumb" target="_blank" href="../images/$:elem[5]">\
+		<img style="height: $:elem[8] px; width: $:elem[9] px;" src="../images/thumb_$:elem[5]"></img>\
+		</a>\
+		</div>\
+	<blockquote id="m$:elem[1]" class="postMessage">$:parsecontent(elem[12])</blockquote>\
+	</div>\
+	</div>\
+		
+$def fix(rows):
+	$for row in rows:
+		$:row
+
+$:fix([operation_posts(elem) for elem in posts[1:]])
+
+</div>
+<hr></hr>
+	</div>
+
+		$if form: <form name="main" method="post" enctype="multipart/form-data"> 
+			<center>
+				$if form: $:form.render()
+				$if form: <input type="submit" value="Reply" style="width: 400px;" />
+			</center>
+		$if form: </form>
+	</body>
+</html>
